@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="assets/favicon/tesla-favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Tesla Landing Clone ES</title>
+</head>
+<body>
+    <section class="NavigationWrapper">
+        <header class="Header">
+            <div class="Header-logoContainer">
+                <svg class="Header-logo" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path>
+                </svg>         
+            </div>
+            <nav class="Header-nav">
+                <ul class="Header-navList">
+                    <li class="Header-navItem"><a href="" class="Header-navLink">Vehículos</a></li>
+                    <li class="Header-navItem"><a href="" class="Header-navLink">Energía</a></li>
+                    <li class="Header-navItem"><a href="" class="Header-navLink">Carga</a></li>
+                    <li class="Header-navItem"><a href="" class="Header-navLink">Descubrir</a></li>
+                    <li class="Header-navItem"><a href="" class="Header-navLink">Tienda</a></li>
+                </ul>
+            </nav>
+            <nav class="Header-nav Header-nav--rightSize">
+                <ul class="Header-navList">
+                    <li><a class="Header-navLink" href="#"><i class="fa-regular fa-circle-question Header-navIcon"></i></a></li>
+                    <li><a class="Header-navLink" href="#"><i class="fa-solid fa-globe Header-navIcon"></i></a></li>
+                    <li><a class="Header-navLink" href="#"><i class="fa-regular fa-circle-user Header-navIcon"></i></a></li>
+                </ul>
+            </nav>
+            <div class="Header-navBackdrop"></div>
+            <button class="Header-openMenuBtn">Menú</button>
+        </header>
+        <dialog class="MobileMenu">
+            <div class="MobileMenu-closeBtnContainer">
+                <button class="MobileMenu-closeBtn">
+                    <i class="fa-solid fa-xmark MobileMenu-closeIcon"></i>
+                </button>
+            </div>
+            <ul class="MobileMenu-list">
+                <li class="MobileMenu-item">
+                    <a class="MobileMenu-link" href="#">Vehículos</a>
+                </li>
+                <li class="MobileMenu-item">
+                    <a class="MobileMenu-link" href="#">Energía</a>
+                </li>
+                <li class="MobileMenu-item">
+                    <a class="MobileMenu-link" href="#">Carga</a>
+                </li>
+                <li class="MobileMenu-item">
+                    <a class="MobileMenu-link" href="#">Descubrir</a>
+                </li>
+                <li class="MobileMenu-item">
+                    <a class="MobileMenu-link" href="#">Tienda</a>
+                </li>
+                <li class="MobileMenu-item">
+                    <a class="MobileMenu-link" href="#">Soporte</a>
+                </li>
+                <li class="MobileMenu-item">
+                    <a class="MobileMenu-link" href="#">
+                        <i class="fa-solid fa-globe MobileMenu-icon"></i>
+                        <div class="MobileMenu-textsContainer">
+                            <p class="MobileMenu-text">España</p>
+                            <span class="MobileMenu-text MobileMenu-text--contrast">español</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="MobileMenu-item">
+                    <a class="MobileMenu-link" href="#">
+                        <i class="fa-regular fa-circle-user MobileMenu-icon"></i>
+                        <p class="MobileMenu-text">Cuenta</p>
+                    </a>
+                </li>
+            </ul>
+        </dialog>
+    </section>
+    <main>     
+        <section class="HeroSection">
+            <div class="HeroSection-container">
+                <header class="HeroSection-header">
+                    <h2 class="HeroSection-title">Model Y</h2>
+                    <a href="#" class="HeroSection-subtitle">Explorar inventario</a>
+                </header>
+                <footer class="HeroSection-footer">
+                    <div class="HeroSection-btnsContainer">
+                        <a class="HeroSection-btn HeroSection-btn--white" href="#">Pedido personalizado</a>
+                        <a class="HeroSection-btn" href="#">Prueba de conducción</a>
+                    </div>
+                </footer>
+            </div>
+            <div class="HeroSection-bgContainer">
+                <video class="HeroSection-bg" autoplay muted loop src="assets/background/model-y.mp4"></video>
+            </div>
+        </section>
+        <section class="HeroSection" data-header-color="black">
+            <div class="HeroSection-container">
+                <div class="HeroSection-header">
+                    <h2 class="HeroSection-title">Model 3</h2>
+                </div>
+                <footer class="HeroSection-footer">
+                    <div class="HeroSection-btnsContainer">
+                        <a class="HeroSection-btn" href="#">Pedido personalizado</a>
+                        <a class="HeroSection-btn HeroSection-btn--white" href="#">Prueba de conducción</a>
+                    </div>
+                </footer>
+            </div>
+            <div class="HeroSection-bgContainer">
+                <picture>
+                    <source srcset="assets/background/model-3-mobile.avif" media="(max-width: 700px)">
+                    <img class="HeroSection-bg" src="assets/background/model-3.avif"></img>
+                </picture>
+            </div>
+        </section>
+        <section class="HeroSection" data-header-color="black">
+            <div class="HeroSection-container">
+                <div class="HeroSection-header">
+                    <h2 class="HeroSection-title">Model S</h2>
+                    <a href="#" class="HeroSection-subtitle">Explorar inventario</a>
+                </div>
+                <footer class="HeroSection-footer">
+                    <div class="HeroSection-btnsContainer">
+                        <a class="HeroSection-btn" href="#">Pedido personalizado</a>
+                        <a class="HeroSection-btn HeroSection-btn--white" href="#">Prueba de conducción</a>
+                    </div>
+                </footer>
+            </div>
+            <div class="HeroSection-bgContainer">
+                <picture>
+                    <source srcset="assets/background/model-s-mobile.avif" media="(max-width: 700px)">
+                    <img class="HeroSection-bg" src="assets/background/model-s.avif"></img>
+                </picture>
+            </div>
+        </section>
+        <section class="HeroSection" data-header-color="black">
+            <div class="HeroSection-container">
+                <div class="HeroSection-header">
+                    <h2 class="HeroSection-title">Model X</h2>
+                    <a href="#" class="HeroSection-subtitle">Explorar inventario</a>
+                </div>
+                <footer class="HeroSection-footer">
+                    <div class="HeroSection-btnsContainer">
+                        <a class="HeroSection-btn" href="#">Pedido personalizado</a>
+                        <a class="HeroSection-btn HeroSection-btn--white" href="#">Prueba de conducción</a>
+                    </div>
+                </footer>
+            </div>
+            <div class="HeroSection-bgContainer">
+                <picture>
+                    <source srcset="assets/background/model-x-mobile.avif" media="(max-width: 700px)">
+                    <img class="HeroSection-bg" src="assets/background/model-x.avif"></img>
+                </picture>
+            </div>
+        </section>
+        <section class="HeroSection">
+            <div class="HeroSection-container">
+                <div class="HeroSection-header">
+                    <h2 class="HeroSection-title">Disfruta de Tesla</h2>
+                    <p class="HeroSection-subtitle HeroSection-subtitle--noUnderline">Programe una prueba de conducción hoy mismo</p>
+                </div>
+                <footer class="HeroSection-footer">
+                    <div class="HeroSection-btnsContainer">
+                        <a class="HeroSection-btn HeroSection-btn--transparent" href="#">Prueba de conducción</a>
+                    </div>
+                </footer>
+            </div>
+            <div class="HeroSection-bgContainer HeroSection-bgContainer--black">
+                <video class="HeroSection-bg" autoplay muted loop src="assets/background/demo-drive.webm"></video>
+            </div>
+        </section>
+        <section class="HeroSection" data-header-color="black">
+            <div class="HeroSection-container">
+                <div class="HeroSection-header">
+                    <h2 class="HeroSection-title">Solar y Powerwall</h2>
+                    <p class="HeroSection-subtitle HeroSection-subtitle--noUnderline">Energía para todos</p>
+                </div>
+                <footer class="HeroSection-footer">
+                    <div class="HeroSection-btnsContainer">
+                        <a class="HeroSection-btn" href="#">Saber más</a>
+                    </div>
+                </footer>
+            </div>
+            <div class="HeroSection-bgContainer">
+                <picture>
+                    <source srcset="assets/background/solar-pannels-mobile.avif" media="(max-width: 700px)">
+                    <img class="HeroSection-bg" src="assets/background/solar-pannels.avif"></img>
+                </picture>
+            </div>
+        </section>
+        <section class="HeroSection" data-header-color="black">
+            <div class="HeroSection-container">
+                <div class="HeroSection-header">
+                    <h2 class="HeroSection-title">Accesorios</h2>
+                </div>
+                <footer class="HeroSection-footer">
+                    <div class="HeroSection-btnsContainer">
+                        <a class="HeroSection-btn HeroSection-btn--white" href="#">Comprar ahora</a>
+                    </div>
+                </footer>
+            </div>
+            <div class="HeroSection-bgContainer">
+                <picture>
+                    <source srcset="assets/background/accessories-mobile.avif" media="(max-width: 700px)">
+                    <img class="HeroSection-bg" src="assets/background/accessories.avif"></img>
+                </picture>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
